@@ -1,7 +1,7 @@
 import React from 'react';
 import './Form.css';
-import CarSelect from './carSelect';
-import DataInput from './dataInput';
+import CarSelect from './CarSelect';
+import DataInput from './DataInput';
 import Checkbox from './Checkbox';
 import ContentButton from '../ContentButton/ContentButton';
 
