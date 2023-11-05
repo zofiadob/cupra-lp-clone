@@ -1,0 +1,151 @@
+.carouselContainer {
+    position: relative;
+    text-align: center;
+    min-height: 50rem;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+.slider {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% /3) - 12px);
+    scroll-behavior: smooth;
+    position: absolute;
+    top: 15%;
+    overflow: hidden;
+    padding: 0 15%;
+}
+
+.slide {
+    display: grid;
+    min-width: 30rem;
+    width: 100%;
+}
+
+.smalleSlideText {
+    font-size: 0.875rem;
+}
+
+.slideHeader {
+    color: #000;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+}
+
+.slideImage {
+    max-width: 40rem;
+    width: 100%;
+}
+
+.flexInfo {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.flexInfo>span {
+    max-width: 10rem;
+}
+
+.power {
+    margin-bottom: 3rem;
+}
+
+.flexInfo>span>span {
+    font-weight: 600;
+    width: 100%;
+}
+
+.slideButton {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 74%;
+    top: 42%;
+}
+
+.slideButton>img {
+    width: 8px;
+}
+
+#left {
+    transform: rotate(180deg);
+    left: 23%;
+}
+
+@media (max-width: 1520px) {
+    .slider {
+        padding: 0 8%;
+    }
+}
+
+
+@media (max-width: 1220px) {
+    .slider {
+        padding: 0 15%;
+    }
+
+    .slide {
+        min-width: 20rem;
+    }
+
+    .slideButton {
+        left: 80%;
+    }
+
+    #left {
+        left: 15%;
+    }
+
+    .slideHeader {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 905px) {
+    .slider {
+        padding: 0 25%;
+    }
+
+    .slide {
+        min-width: 10rem;
+    }
+
+    .flexInfo {
+        display: grid;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .slider {
+        padding: 0 25% 0 5%;
+    }
+
+
+    .slide {
+        min-width: 7rem;
+    }
+
+    .slideButton {
+        left: 85%;
+        background-color: transparent;
+    }
+
+    #left {
+        left: 10%;
+    }
+
+}

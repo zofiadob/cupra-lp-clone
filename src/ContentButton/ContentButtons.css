@@ -1,0 +1,53 @@
+:root {
+    --button-black: #000;
+    --button-white: #FFF;
+    --button-grey: #494949;
+    --button-creme: #DBD3CB;
+}
+
+.button {
+    display: "inline-flex";
+    text-align: center;
+    font-family: Cupra;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    cursor: "pointer";
+    transition: background-color 0.5s ease;
+}
+
+.white {
+    border: 1px solid var(--button-black);
+    color: var(---button-black);
+}
+
+.white:hover {
+    border: 2px solid var(--button-black);
+}
+
+.black {
+    border: 1px solid var(--button-black);
+    color: var(--button-white);
+    background-color: var(--button-black);
+}
+
+.black:hover {
+    border: 1px solid var(--button-grey);
+    background-color: var(--button-grey);
+}
+
+.creme {
+    border: 1px solid var(--button-creme);
+    background-color: var(--button-creme);
+}
+
+.creme:hover {
+    border: 1px solid var(--button-white);
+    background-color: var(--button-white);
+}
+
+
+.round {
+    border-radius: 1.5rem;
+}

@@ -1,0 +1,130 @@
+:root {
+    --web-light-gray: #F4F4F3;
+    --web-dark-gray: #242221;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: var(--web-light-gray);
+    padding: 0 17rem;
+    min-height: 5rem;
+    justify-content: space-between;
+    color: var(--web-dark-gray);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.logo {
+    max-width: 8.875rem;
+    width: 100%;
+}
+
+.logoBox {
+    margin: auto 0;
+    margin-right: 6rem;
+    width: 10%;
+    cursor: pointer;
+}
+
+.menuItemsBox {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.menuIconBox{
+    display: none;
+}
+
+.menuItem {
+    color: #242221;
+    font-family: Cupra;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 1.625rem;
+    margin-right: 2rem;
+}
+
+.linksBox {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+.phoneLink {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.phoneLink:hover,
+.menuItem:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1820px) {
+    .menu{
+        padding: 0 10%;
+    }
+
+    .logoBox {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1236px){
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 30px;
+    }
+
+    .menuIconBox{
+        grid-column: 2;
+        grid-row: 1;
+        display: block;
+    }
+
+    .menuIconBox > img{
+        width: 100%;
+    }
+
+    .logoBox{
+        min-height: 2rem;
+        width: 40%;
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        max-width: none;
+        width: 100%;
+    }
+
+    .menuItemsBox{
+        display: grid;
+        width: 100%;
+    }
+
+    .linksBox{
+        width: 100%;
+        display: grid;
+        grid-column: 1;
+        margin: 1rem 0;
+    }
+
+    .hidden{
+        display: none;
+    }
+}
+
+/* 1180  od tylu mobile menu*/

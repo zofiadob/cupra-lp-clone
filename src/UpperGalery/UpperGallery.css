@@ -1,0 +1,108 @@
+:root {
+    --background-grey: var(#1B1B1B);
+    --text-grey: var(255, 255, 255, 0.50);
+    --text-white: var(#FFFFFF);
+}
+
+
+.upperGallery {
+    background-color: var(--background-grey, #1B1B1B);
+    text-align: center;
+}
+
+.container {
+    padding: 6rem 17rem;
+}
+
+.upperBox {
+    width: 40%;
+    margin-bottom: 4rem;
+    text-align: left;
+}
+
+.shortBox {
+    width: 70%;
+    text-align: left;
+}
+
+.longBox {
+    padding: 4rem 5rem 0 2rem;
+}
+
+.galleryText {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.galleryTextSmall {
+    font-size: 2.5rem;
+}
+
+.text {
+    color: rgb(255, 255, 255, 0.50);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 40%;
+}
+
+.description {
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.imageBox {
+    margin-bottom: 9.8rem;
+}
+
+
+@media (max-width: 1820px){
+    .imageBox > img, .longBox>img{
+        width: 100%;
+    }
+
+    .container{
+        padding: 6rem 10%;
+    }
+}
+
+
+@media (max-width: 905px) {
+
+    .grid {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+    }
+
+    .imageBox{
+        margin-bottom: 3rem;
+    }
+
+    .upperBox{
+        width: 100%;
+    }
+
+    .longBox{
+        padding: 0;
+        margin-top: 5rem;
+    }
+
+    .shortBox{
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .galleryTextSmall {
+        font-size: 1.5rem;
+    }
+}

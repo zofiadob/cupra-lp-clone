@@ -1,0 +1,197 @@
+.formContainer {
+    background-color: #F5F5F5;
+    padding: 6.5rem 39rem;
+    color: #000;
+    font-weight: 300;
+    font-size: 0.8125rem;;
+}
+
+.upperText {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.formHeader {
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 0 7rem 4rem 7rem;
+}
+
+.formButton{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* ///////CarSelect////// */
+
+.carSelectContainer {
+    display: grid;
+    justify-content: center;
+}
+
+.chosenCar {
+    display: flex;
+    max-height: 9.0625rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D5D5D5;
+    cursor: pointer;
+}
+
+.listWidth{
+    width: 100%;
+    min-width: 34.5625rem;
+    max-width: 34.5625rem;
+}
+
+.arrow{
+    margin-right: 1.25rem;
+}
+
+.rotated{
+    transform: rotate(180deg);
+}
+
+.chosenCar > div {
+    display: flex;
+    align-items: center;
+}
+
+.carList {
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.carList>li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #D5D5D5;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.carList>li:hover {
+    background-color: #D5D5D5;
+}
+
+.carList>li>div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.carList>li>div>img,
+.chosenCar>div>img {
+    width: 100%;
+    max-width: 19rem;
+    padding: .3rem;
+}
+
+.phantomDiv {
+    min-width: 10px;
+    min-height: 1px;
+    margin-right: 1.25rem;
+}
+
+.hidden{
+    display: none;
+}
+
+/* ///////Inputs////// */
+
+.inputs {
+    text-align: center;
+    display: block;
+}
+
+.inputs>div>input {
+    color: #242221;
+    font-family: Cupra;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 34.5rem;
+    min-height: 2rem;
+    margin: 1.25rem 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.inputs>div>input:focus {
+    outline: none;
+}
+
+.obligatoryText {
+    margin: 0 auto 3rem auto;
+    text-align: left;
+    width: 100%;
+    max-width: 34.5rem;
+}
+
+p>a {
+    text-decoration: underline;
+}
+
+/* ///////Checkbox////// */
+
+.checkbox {
+    display: grid;
+    grid-template-columns: 1.25rem 100%;
+    align-items: flex-start;
+    margin: 1.5rem 0;
+}
+
+.check {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: solid 1px #D5D5D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check>div {
+    width: .8rem;
+    height: .8rem;
+    background-color: #8C8B8B;
+}
+
+.checkbox>span {
+    margin-left: .75rem;
+    line-height: 1.3125rem;
+}
+
+
+
+@media (max-width: 1820px){
+    .formContainer{
+        padding: 6.5rem 20%;
+    }
+}
+
+@media (max-width: 905px){
+    .formContainer{
+        padding: 6.5rem 2rem;
+    }
+
+    .formHeader{
+        margin: 0 3rem 4rem 3rem;
+    }
+
+    .listWidth{
+        min-width: 10rem;
+    }
+
+    .carList>li>div>img,
+.chosenCar>div>img {
+    width: 100%;
+    max-width: 9rem;
+    padding: .3rem;
+}
+}

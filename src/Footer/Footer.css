@@ -1,0 +1,58 @@
+.footer {
+    max-height: 94rem;
+}
+
+.line {
+    min-height: 1px;
+    background-color: #D5D5D5;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.8rem 17rem;
+}
+
+.textBox {
+    display: flex;
+}
+
+.textBox>p {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.textBox>div {
+    background-color: #DBDBDB;
+    min-width: 0.0625rem;
+    min-height: 20px;
+}
+
+.socialBox {
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 1820px) {
+    .flex {
+        padding: 2.8rem 10%;
+    }
+}
+
+@media (max-width: 905px) {
+    .flex {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .flex>div {
+        text-align: center;
+    }
+}
