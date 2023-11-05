@@ -1,8 +1,16 @@
-# React + Vite
+# Cupra landing page clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![page picture](./src/assets/final.png)
 
-Currently, two official plugins are available:
+This project aims to replicate the sleek and visually appealing design of the Cupra landing page. By leveraging HTML, CSS, JavaScript and React we've recreated the layout, and interactive elements to provide users with an immersive experience reminiscent of the original site.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+
+- Accurate visual representation of the Cupra landing page layout.
+- Responsive design for seamless browsing on various devices.
+- Possible inclusion of JavaScript for enhanced interactivity.
+
+## Get Started
+
+- npm install
+- npm run dev
